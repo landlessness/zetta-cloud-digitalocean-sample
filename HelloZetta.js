@@ -1,9 +1,10 @@
+var argv = require('minimist')(process.argv.slice(2));
 var zetta = require('zetta');
 
-var PORT = process.env.PORT || 3000;
+var PORT = argv['p'] || 1337;
 
 zetta()
-  .name('cloud')
+  .name('hello')
   .expose('*')
   .listen(PORT, function(err) {
     if(err) {
