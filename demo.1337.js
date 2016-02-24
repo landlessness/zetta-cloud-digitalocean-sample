@@ -3,7 +3,7 @@ var zetta = require('zetta');
 var PORT = 1337;
 
 zetta()
-  .name('hello')
+  .name('demo')
   .expose('*')
   .listen(PORT, function(err) {
     if(err) {
