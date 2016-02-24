@@ -1,7 +1,6 @@
-var argv = require('minimist')(process.argv.slice(2));
 var zetta = require('zetta');
 
-var PORT = argv['p'] || 1337;
+var PORT = 1337;
 
 zetta()
   .name('hello')
