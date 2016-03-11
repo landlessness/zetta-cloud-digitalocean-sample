@@ -4,7 +4,7 @@ var PORT = 1337;
 
 zetta()
   .name('demo')
-  .properties({style: {backgroundColor: '#E84625'}})
+  .properties({style: {colors: {primary: {decimal: {red: 255, green: 0, blue: 0}, hex: '#F00'}}}})
   .expose('*')
   .listen(PORT, function(err) {
     if(err) {
