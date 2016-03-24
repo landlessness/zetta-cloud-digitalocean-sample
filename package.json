@@ -1,10 +1,10 @@
 {
   "name": "proxy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "zetta": "^0.33.0"
+    "zetta": "~1.0.0-beta.6"
   },
   "devDependencies": {},
   "scripts": {
