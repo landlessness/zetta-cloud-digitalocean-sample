@@ -1,14 +1,15 @@
 var zetta = require('zetta');
 
-var PORT = process.env.PORT || 3000;
+var SERVER_NAME = process.argv[2]
+var PORT = process.argv[3];
 
 zetta()
-  .name('cloud')
+  .name(SERVER_NAME)
   .expose('*')
   .listen(PORT, function(err) {
     if(err) {
       console.error(err);
       process.exit(1);
     }
-    console.log('running on http://localhost:', PORT)
+    console.log('running on http://localhost:' + PORT)
   });
