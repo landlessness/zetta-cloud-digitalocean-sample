@@ -13,3 +13,5 @@ zetta()
     }
     console.log('running on http://localhost:' + PORT)
   });
+
+// pm2 start server.js --name dev.1360 -- dev 1360
